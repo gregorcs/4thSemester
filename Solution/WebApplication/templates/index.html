@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoking Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Smoking Prediction</h1>
+        <form id="input-form">
+            <label for="json-input">Upload a JSON file:</label>
+            <input type="file" id="json-input" accept=".json">
+            <button id="predict-button" type="button">Predict</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <a id="left-arrow" class="arrow left-arrow">&lt;</a>
+    <a id="right-arrow" class="arrow right-arrow">&gt;</a>
+
+    <script src="{{ url_for('static', filename='Navigation.js') }}"></script>
+    <script src="{{ url_for('static', filename='Routes.js') }}"></script>
+    <script src="{{ url_for('static', filename='Styles.js') }}"></script>
+</body>
+
+</html>
